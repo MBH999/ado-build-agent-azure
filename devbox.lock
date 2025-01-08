@@ -1,0 +1,645 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "azure-cli@2.67.0": {
+      "last_modified": "2024-12-31T03:55:54Z",
+      "resolved": "github:NixOS/nixpkgs/69b9a8c860bdbb977adfa9c5e817ccb717884182#azure-cli",
+      "source": "devbox-search",
+      "version": "2.67.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0ianb9km1i6shdcblkiw5y2d50bjn3hy-python3.12-azure-cli-2.67.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/vxgfs9gg5225dbyrb0zchc1fyfmj086g-python3.12-azure-cli-2.67.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/0ianb9km1i6shdcblkiw5y2d50bjn3hy-python3.12-azure-cli-2.67.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1nxzp6qdii9s4l5ad0q95dw846sa04rc-python3.12-azure-cli-2.67.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/n6sjmdx7s4i17q86qwiy72q9kqmwr55v-python3.12-azure-cli-2.67.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/1nxzp6qdii9s4l5ad0q95dw846sa04rc-python3.12-azure-cli-2.67.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qz6xyiyzm0kfgmwaa2h8rk8zyqnx0nfq-python3.12-azure-cli-2.67.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/1wc26jkfjlib7yx36bv01k45q32vdy74-python3.12-azure-cli-2.67.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/qz6xyiyzm0kfgmwaa2h8rk8zyqnx0nfq-python3.12-azure-cli-2.67.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gkj8g8qwdgvaqck5ipvbl0hlpmy7bjzn-python3.12-azure-cli-2.67.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/5g7sx9npjq01pik2rl470qqhywlvss67-python3.12-azure-cli-2.67.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/gkj8g8qwdgvaqck5ipvbl0hlpmy7bjzn-python3.12-azure-cli-2.67.0"
+        }
+      }
+    },
+    "python312Packages.ansible-core@2.18.1": {
+      "last_modified": "2024-12-27T03:08:00Z",
+      "resolved": "github:NixOS/nixpkgs/7cc0bff31a3a705d3ac4fdceb030a17239412210#python312Packages.ansible-core",
+      "source": "devbox-search",
+      "version": "2.18.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mx2rfnsbyvvifqj1msyqvmzd6hs2pq4d-python3.12-ansible-core-2.18.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/7i4kl0v2m18h3i8p28mmxycrngv5sbmf-python3.12-ansible-core-2.18.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/mx2rfnsbyvvifqj1msyqvmzd6hs2pq4d-python3.12-ansible-core-2.18.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yyhf8vvc5xb59kqhck88kmwk7wfnwmpn-python3.12-ansible-core-2.18.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/phskqpyh5s8yx2gv6lhblfc1v4ixf41d-python3.12-ansible-core-2.18.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/yyhf8vvc5xb59kqhck88kmwk7wfnwmpn-python3.12-ansible-core-2.18.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gjxin0im5kfrkz9jndf5171js9jmjq6v-python3.12-ansible-core-2.18.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/3lwjpxdxxmm3s6caq6lbczyjyz5kdxpx-python3.12-ansible-core-2.18.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/gjxin0im5kfrkz9jndf5171js9jmjq6v-python3.12-ansible-core-2.18.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cs8bjmsfjsfzb4mh98lchp1f04arw1yh-python3.12-ansible-core-2.18.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/v13za5xmnc7sycay8hn0szpzmjzfdza9-python3.12-ansible-core-2.18.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/cs8bjmsfjsfzb4mh98lchp1f04arw1yh-python3.12-ansible-core-2.18.1"
+        }
+      }
+    },
+    "python312Packages.ansible@11.1.0": {
+      "last_modified": "2024-12-27T03:08:00Z",
+      "resolved": "github:NixOS/nixpkgs/7cc0bff31a3a705d3ac4fdceb030a17239412210#python312Packages.ansible",
+      "source": "devbox-search",
+      "version": "11.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4bcra67rla0lhn6hsrd68dikwwkgrfqw-python3.12-ansible-11.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/86wwlwr295rabdd05qldifyc6nii4ada-python3.12-ansible-11.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/4bcra67rla0lhn6hsrd68dikwwkgrfqw-python3.12-ansible-11.1.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/j4p93kgh74ssfpwp0pvxj5hcbjn62903-python3.12-ansible-11.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/6g9rdm0dvf4z8l0ld72my6qv9fwcr1r8-python3.12-ansible-11.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/j4p93kgh74ssfpwp0pvxj5hcbjn62903-python3.12-ansible-11.1.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xg0pp0acigximvqy6lgnpkv55cincy6h-python3.12-ansible-11.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/3qq71g6ykbzsn9bma3ki12v9hcxxifzq-python3.12-ansible-11.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/xg0pp0acigximvqy6lgnpkv55cincy6h-python3.12-ansible-11.1.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9wy1z421cd6mfmb9cqvarqsn4cvrnd6f-python3.12-ansible-11.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/7bmxyi2pz3jg3qbq15kfg6mr9bv63xy2-python3.12-ansible-11.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/9wy1z421cd6mfmb9cqvarqsn4cvrnd6f-python3.12-ansible-11.1.0"
+        }
+      }
+    },
+    "python312Packages.azure-identity@1.18.0": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.azure-identity",
+      "source": "devbox-search",
+      "version": "1.18.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y5pm37sw15a1j9kfpcj2in8v52n7nvmj-python3.12-azure-identity-1.18.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/pvi4mxsxx4k2v11ia9lfw85s4c8w7f2l-python3.12-azure-identity-1.18.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/y5pm37sw15a1j9kfpcj2in8v52n7nvmj-python3.12-azure-identity-1.18.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xfzj0wv67723dv5sp9gr1xmk68z1bax4-python3.12-azure-identity-1.18.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/hy05j0l6v2j8kpdk91f9ns65lklq8w8p-python3.12-azure-identity-1.18.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/xfzj0wv67723dv5sp9gr1xmk68z1bax4-python3.12-azure-identity-1.18.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wvar73r91vm5bjkn7rn594vkq6yqandn-python3.12-azure-identity-1.18.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/6ma1w19wnkrq70xz1cl0xm35qphx3kk1-python3.12-azure-identity-1.18.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/wvar73r91vm5bjkn7rn594vkq6yqandn-python3.12-azure-identity-1.18.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6m0byxsdvrrxn9k96gxghffxykrs9pgn-python3.12-azure-identity-1.18.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/9wa8dfmci4izf58n4w1hgvxzjr2fw5pd-python3.12-azure-identity-1.18.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/6m0byxsdvrrxn9k96gxghffxykrs9pgn-python3.12-azure-identity-1.18.0"
+        }
+      }
+    },
+    "python312Packages.azure-mgmt-automation@latest": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.azure-mgmt-automation",
+      "source": "devbox-search",
+      "version": "1.0.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/w13vlx5srhx1z5zx9xgjszry7kqv70q5-python3.12-azure-mgmt-automation-1.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/8q3l5ndc5fkbhvzzi2qflwfn4f40hqi1-python3.12-azure-mgmt-automation-1.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/w13vlx5srhx1z5zx9xgjszry7kqv70q5-python3.12-azure-mgmt-automation-1.0.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y1gywfqa2zq5h476djm752zpp1hwdb6p-python3.12-azure-mgmt-automation-1.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/0wbqgcv694rv2m85anvzwf92xng2w5g9-python3.12-azure-mgmt-automation-1.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/y1gywfqa2zq5h476djm752zpp1hwdb6p-python3.12-azure-mgmt-automation-1.0.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/37b2c48f1gqzwkxml6jq6wqlm7wvzpmb-python3.12-azure-mgmt-automation-1.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/4s3gn4kas5lrzd01iqjv7y5ia79398qs-python3.12-azure-mgmt-automation-1.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/37b2c48f1gqzwkxml6jq6wqlm7wvzpmb-python3.12-azure-mgmt-automation-1.0.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x6n1hms8sppndwjk8bzck5my3j44ayhx-python3.12-azure-mgmt-automation-1.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/b2ymv0y5chnamwz51bracfd4bypwqd9x-python3.12-azure-mgmt-automation-1.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/x6n1hms8sppndwjk8bzck5my3j44ayhx-python3.12-azure-mgmt-automation-1.0.0"
+        }
+      }
+    },
+    "python312Packages.azure-mgmt-datafactory@9.0.0": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.azure-mgmt-datafactory",
+      "source": "devbox-search",
+      "version": "9.0.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5wycnlmrx14nqhxamy46lwx3zi5q5vyv-python3.12-azure-mgmt-datafactory-9.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/9yfql4lajfyb4v274h7845nnw4n27xfm-python3.12-azure-mgmt-datafactory-9.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/5wycnlmrx14nqhxamy46lwx3zi5q5vyv-python3.12-azure-mgmt-datafactory-9.0.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1pidw0994z695b6ag34dnh3km0ql3vqm-python3.12-azure-mgmt-datafactory-9.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/iddfnrgc3ik7f60r0fwgnh1ykxq7lng2-python3.12-azure-mgmt-datafactory-9.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/1pidw0994z695b6ag34dnh3km0ql3vqm-python3.12-azure-mgmt-datafactory-9.0.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b6cpckrpknc9fr9pskw9a1s42lybsrw9-python3.12-azure-mgmt-datafactory-9.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/mcis3vnnc9wjk2skywsfwx6allxyk0sz-python3.12-azure-mgmt-datafactory-9.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/b6cpckrpknc9fr9pskw9a1s42lybsrw9-python3.12-azure-mgmt-datafactory-9.0.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0rp27rslxrn3mnljwa5saa6l16m0xmmi-python3.12-azure-mgmt-datafactory-9.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/ns978p9nk9l37agwl832m370p19zi0cr-python3.12-azure-mgmt-datafactory-9.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/0rp27rslxrn3mnljwa5saa6l16m0xmmi-python3.12-azure-mgmt-datafactory-9.0.0"
+        }
+      }
+    },
+    "python312Packages.azure-mgmt-network@latest": {
+      "last_modified": "2025-01-02T12:43:26Z",
+      "resolved": "github:NixOS/nixpkgs/d6973081434f88088e5321f83ebafe9a1167c367#python312Packages.azure-mgmt-network",
+      "source": "devbox-search",
+      "version": "28.1.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/swycw8pm2cvw49dc4nligfp0v6d8x85x-python3.12-azure-mgmt-network-28.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/r1vfcwll3cp69s6530ngxz5p2k3qrawr-python3.12-azure-mgmt-network-28.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/swycw8pm2cvw49dc4nligfp0v6d8x85x-python3.12-azure-mgmt-network-28.1.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dgagg7firdk5lvkil4n3m8q2swq0lyk4-python3.12-azure-mgmt-network-28.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/703w4miqwy40ik7m1m8zp2k42chqqq0c-python3.12-azure-mgmt-network-28.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/dgagg7firdk5lvkil4n3m8q2swq0lyk4-python3.12-azure-mgmt-network-28.1.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0n0420xgv6j7z2phsskk5yzvf1y87i7n-python3.12-azure-mgmt-network-28.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/3js4a996qqx943ddms4kn8bayixd4qid-python3.12-azure-mgmt-network-28.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/0n0420xgv6j7z2phsskk5yzvf1y87i7n-python3.12-azure-mgmt-network-28.1.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7cidsc3mmdn8r5iyrl32iy1d7rhff2zk-python3.12-azure-mgmt-network-28.1.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/xd3w3vqllysbd0vbi8yi6964mh41mn4i-python3.12-azure-mgmt-network-28.1.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/7cidsc3mmdn8r5iyrl32iy1d7rhff2zk-python3.12-azure-mgmt-network-28.1.0"
+        }
+      }
+    },
+    "python312Packages.azure-mgmt-notificationhubs@8.0.0": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.azure-mgmt-notificationhubs",
+      "source": "devbox-search",
+      "version": "8.0.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/883658fcdr84wshpzln52pfpw4pp3wj1-python3.12-azure-mgmt-notificationhubs-8.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/m488pcan3ca46his0552pbs94x5sydyi-python3.12-azure-mgmt-notificationhubs-8.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/883658fcdr84wshpzln52pfpw4pp3wj1-python3.12-azure-mgmt-notificationhubs-8.0.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/virvw5rbx4pzwxfc13blwnnpsgq20jyh-python3.12-azure-mgmt-notificationhubs-8.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/msvdkffp2wpl0imm7ap8khswgch2h01r-python3.12-azure-mgmt-notificationhubs-8.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/virvw5rbx4pzwxfc13blwnnpsgq20jyh-python3.12-azure-mgmt-notificationhubs-8.0.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bjk5zpb5lidjz72rbq4xw0dldlmazdhj-python3.12-azure-mgmt-notificationhubs-8.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/s0046imdxd7h83i9a7wbhck71ky2hl72-python3.12-azure-mgmt-notificationhubs-8.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/bjk5zpb5lidjz72rbq4xw0dldlmazdhj-python3.12-azure-mgmt-notificationhubs-8.0.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6r70z9mpg0d7nw1fqrg9g0fjkbb3bppc-python3.12-azure-mgmt-notificationhubs-8.0.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/cll0d1hfhhzpvy3mjbpqh3qh37zdwhfr-python3.12-azure-mgmt-notificationhubs-8.0.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/6r70z9mpg0d7nw1fqrg9g0fjkbb3bppc-python3.12-azure-mgmt-notificationhubs-8.0.0"
+        }
+      }
+    },
+    "python312Packages.azure-storage-blob@12.23.1": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.azure-storage-blob",
+      "source": "devbox-search",
+      "version": "12.23.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2kw5vxyvvy6md9f9yzbalmc5418aan4v-python3.12-azure-storage-blob-12.23.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/l1xn9y59xxw53mavmgp979kj7swas1lk-python3.12-azure-storage-blob-12.23.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/2kw5vxyvvy6md9f9yzbalmc5418aan4v-python3.12-azure-storage-blob-12.23.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ppiw1jjnhwmhnr9r7rn594b1jc24rzxw-python3.12-azure-storage-blob-12.23.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/rbymxnf38vb7qk7cvmfpgcx20sghhkfa-python3.12-azure-storage-blob-12.23.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/ppiw1jjnhwmhnr9r7rn594b1jc24rzxw-python3.12-azure-storage-blob-12.23.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2xp5cjhh0zyi9vimlzbg0qqnnlllnmkp-python3.12-azure-storage-blob-12.23.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/nh2ivllsf9fsd9149949yc1mp662i8vj-python3.12-azure-storage-blob-12.23.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/2xp5cjhh0zyi9vimlzbg0qqnnlllnmkp-python3.12-azure-storage-blob-12.23.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3njplp4qjr0s46369a4sg2qg3sc639xm-python3.12-azure-storage-blob-12.23.1",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/lmqyka1jzffq3fa8czbaj4qc2qajs7w8-python3.12-azure-storage-blob-12.23.1-dist"
+            }
+          ],
+          "store_path": "/nix/store/3njplp4qjr0s46369a4sg2qg3sc639xm-python3.12-azure-storage-blob-12.23.1"
+        }
+      }
+    },
+    "python312Packages.msgraph-sdk@1.15.0": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#python312Packages.msgraph-sdk",
+      "source": "devbox-search",
+      "version": "1.15.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jp3rdmy5mmwmmxj8acjhxh72pj6ss7ka-python3.12-msgraph-sdk-1.15.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/6czpm6155whgxxx1c4xjppkmpm7vlqas-python3.12-msgraph-sdk-1.15.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/jp3rdmy5mmwmmxj8acjhxh72pj6ss7ka-python3.12-msgraph-sdk-1.15.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0bcqi6phn4br8wv6qfk255wj49z6axhq-python3.12-msgraph-sdk-1.15.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/fra1450a546jj2x1spik5s4ixypi55fs-python3.12-msgraph-sdk-1.15.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/0bcqi6phn4br8wv6qfk255wj49z6axhq-python3.12-msgraph-sdk-1.15.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b69mda7rywbb1hka4gva6zawp378d6xk-python3.12-msgraph-sdk-1.15.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/hraqsm1g2vl4zwcr18g0y5ma31kqgm33-python3.12-msgraph-sdk-1.15.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/b69mda7rywbb1hka4gva6zawp378d6xk-python3.12-msgraph-sdk-1.15.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lmcfmfx740m6ybjd890ny89jfw2ch9bi-python3.12-msgraph-sdk-1.15.0",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/83h18m24qfr0qnih0kpag4bavz9gbb0q-python3.12-msgraph-sdk-1.15.0-dist"
+            }
+          ],
+          "store_path": "/nix/store/lmcfmfx740m6ybjd890ny89jfw2ch9bi-python3.12-msgraph-sdk-1.15.0"
+        }
+      }
+    }
+  }
+}

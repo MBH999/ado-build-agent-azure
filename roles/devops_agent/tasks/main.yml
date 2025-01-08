@@ -1,0 +1,39 @@
+---
+- name: Download the AZTS Agent
+  ansible.builtin.get_url:
+    url: "{{ vsts_agent_url }}"
+    dest: /tmp/vsts-agent-linux-x64.tar.gz
+    mode: "0555"
+
+- name: Create directory for azts Agent
+  ansible.builtin.file:
+    path: /tmp/vsts-agent
+    state: directory
+    mode: "0755"
+
+- name: Extract the AZTS Agent
+  ansible.builtin.unarchive:
+    src: /tmp/vsts-agent-linux-x64.tar.gz
+    dest: /tmp/vsts-agent
+    remote_src: true
+    creates: /tmp/vsts-agent/config.sh
+
+- name: Run the vsts agent config
+  ansible.builtin.command: /tmp/vsts-agent/config.sh --unattended --url "{{ vsts_url }}" --auth pat --token "{{ vsts_pat }}" --pool "{{ vsts_pool }}" --agent "{{ ansible_facts['nodename'] }}" --acceptTeeEula
+  become: false
+  args:
+    chdir: /tmp/vsts-agent
+
+- name: Install the vsts agent service
+  ansible.builtin.command: sudo ./svc.sh install
+  become: true
+  args:
+    chdir: /tmp/vsts-agent
+  changed_when: false
+
+- name: Start the vsts agent service
+  ansible.builtin.command: sudo ./svc.sh start
+  become: true
+  args:
+    chdir: /tmp/vsts-agent
+  changed_when: false

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
+  "packages": [
+    "python312Packages.ansible-core@2.18.1",
+    "python312Packages.ansible@11.1.0",
+    "azure-cli@2.67.0",
+    "python312Packages.azure-storage-blob@12.23.1",
+    "python312Packages.azure-mgmt-network@latest",
+    "python312Packages.azure-mgmt-automation@latest",
+    "python312Packages.azure-mgmt-notificationhubs@8.0.0",
+    "python312Packages.azure-mgmt-datafactory@9.0.0",
+    "python312Packages.azure-identity@1.18.0",
+    "python312Packages.msgraph-sdk@1.15.0"
+  ],
+  "shell": {}
+}

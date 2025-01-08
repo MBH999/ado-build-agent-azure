@@ -1,0 +1,43 @@
+---
+- name: Create Azure VM
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  vars_files:
+    - ./variables.yml
+  roles:
+    - role: azure_vm
+
+- name: Add VM to dynamic inventory
+  hosts: localhost
+  gather_facts: false
+  vars_files:
+    - ./variables.yml
+  tasks:
+    - name: Add VM to inventory
+      ansible.builtin.add_host:
+        name: "{{ azure_vm_name }}"
+        ansible_host: "{{ azure_public_ip_address.state.ip_address }}"
+        ansible_user: "{{ azure_vm_username }}"
+        # ansible_ssh_private_key_file: "{{ azure_vm_local_ssh_public_key_path }}"
+        ansible_connection: ssh
+      when: azure_vm_state == 'present'
+
+    - name: Wait for SSH to become available
+      ansible.builtin.wait_for:
+        port: 22
+        host: "{{ azure_public_ip_address.state.ip_address }}"
+        sleep: 5
+      when: azure_vm_state == 'present'
+
+- name: Configure VM
+  hosts: "{{ azure_vm_name }}"
+  connection: ssh
+  vars_files:
+    - ./variables.yml
+  gather_facts: true
+  become: true
+  become_user: "{{ azure_vm_username }}"
+  roles:
+    - role: devops_agent
+      when: azure_vm_state == 'present'
