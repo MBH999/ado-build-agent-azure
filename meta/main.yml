@@ -27,4 +27,8 @@ galaxy_info:
     - ci
     - cd
 
-dependencies: [] 
+dependencies:
+  - name: azure.azcollection
+    version: ">=1.10.0"
+  - name: community.azure
+    version: ">=1.0.0" 
