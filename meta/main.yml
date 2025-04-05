@@ -27,9 +27,8 @@ galaxy_info:
     - ci
     - cd
 
-dependencies:
-  - name: azure.azcollection
-    version: ">=1.10.0"
-    source: https://galaxy.ansible.com/azure/azcollection
-  - name: community.azure
-    version: ">=1.0.0" 
+dependencies: []
+
+collections:
+  - azure.azcollection
+  - community.general
