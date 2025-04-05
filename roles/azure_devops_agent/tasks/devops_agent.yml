@@ -1,0 +1,54 @@
+---
+- name: Install required packages
+  ansible.builtin.apt:
+    name:
+      - curl
+      - unzip
+      - git
+    state: present
+    update_cache: yes
+
+- name: Create agent directory
+  ansible.builtin.file:
+    path: "{{ vsts_agent_directory }}"
+    state: directory
+    mode: '0755'
+
+- name: Download Azure DevOps agent
+  ansible.builtin.get_url:
+    url: "https://vstsagentpackage.azureedge.net/{{ vsts_agent_version }}/vsts-agent-linux-x64-{{ vsts_agent_version }}.tar.gz"
+    dest: "/tmp/vsts-agent.tar.gz"
+    mode: '0644'
+
+- name: Extract agent package
+  ansible.builtin.unarchive:
+    src: "/tmp/vsts-agent.tar.gz"
+    dest: "{{ vsts_agent_directory }}"
+    remote_src: yes
+
+- name: Configure agent
+  ansible.builtin.shell: |
+    cd {{ vsts_agent_directory }}
+    ./config.sh --unattended \
+      --agent "${HOSTNAME}" \
+      --url "{{ vsts_url }}" \
+      --auth PAT \
+      --token "{{ vsts_pat }}" \
+      --pool "{{ vsts_pool }}" \
+      --replace \
+      --acceptTeeEula
+  args:
+    creates: "{{ vsts_agent_directory }}/.agent"
+
+- name: Install and start agent service
+  ansible.builtin.shell: |
+    cd {{ vsts_agent_directory }}
+    ./svc.sh install
+    ./svc.sh start
+  args:
+    creates: "/etc/systemd/system/vsts-agent.service"
+
+- name: Clean up downloaded package
+  ansible.builtin.file:
+    path: "/tmp/vsts-agent.tar.gz"
+    state: absent 

@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    azure_vm_name: "test-devops-agent"
+    azure_resource_group: "test-resource-group"
+    azure_location: "uksouth"
+    vsts_url: "https://dev.azure.com/your-org"
+    vsts_pat: "your-pat-token"
+    vsts_pool: "Default"
+  roles:
+    - role: azure_devops_agent 

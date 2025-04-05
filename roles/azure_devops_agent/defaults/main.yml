@@ -1,0 +1,19 @@
+---
+# Azure VM Configuration
+azure_vm_name: "devops-agent"
+azure_vm_size: "Standard_B2s"
+azure_vm_username: "azureuser"
+azure_vm_state: "present"
+azure_resource_group: "rg-devops-agent"
+azure_location: "uksouth"
+azure_image_publisher: "Canonical"
+azure_image_offer: "0001-com-ubuntu-server-focal"
+azure_image_sku: "20_04-lts"
+azure_image_version: "latest"
+
+# Azure DevOps Configuration
+vsts_url: ""
+vsts_pat: ""
+vsts_pool: "Default"
+vsts_agent_version: "3.234.0"
+vsts_agent_directory: "/opt/azure-devops-agent" 

@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: azure_devops_agent
+  author: MBH999
+  description: Creates and configures an Azure VM with Azure DevOps build agent
+  company: MBH999
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+  galaxy_tags:
+    - azure
+    - devops
+    - vm
+    - cloud
+    - automation
+    - build
+    - agent
+
+dependencies:
+  - name: azure.azcollection
+    version: ">=1.10.0" 

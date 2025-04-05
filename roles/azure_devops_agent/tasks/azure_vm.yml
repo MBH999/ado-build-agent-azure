@@ -1,0 +1,54 @@
+---
+- name: Create resource group
+  azure.azcollection.azure_rm_resourcegroup:
+    name: "{{ azure_resource_group }}"
+    location: "{{ azure_location }}"
+    state: present
+
+- name: Create virtual network
+  azure.azcollection.azure_rm_virtualnetwork:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ azure_vm_name }}-vnet"
+    address_prefixes: "10.0.0.0/16"
+    state: present
+
+- name: Create subnet
+  azure.azcollection.azure_rm_subnet:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ azure_vm_name }}-subnet"
+    address_prefix: "10.0.1.0/24"
+    virtual_network: "{{ azure_vm_name }}-vnet"
+    state: present
+
+- name: Create public IP
+  azure.azcollection.azure_rm_publicipaddress:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ azure_vm_name }}-pip"
+    allocation_method: Dynamic
+    state: present
+
+- name: Create network interface
+  azure.azcollection.azure_rm_networkinterface:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ azure_vm_name }}-nic"
+    virtual_network: "{{ azure_vm_name }}-vnet"
+    subnet: "{{ azure_vm_name }}-subnet"
+    state: present
+
+- name: Create VM
+  azure.azcollection.azure_rm_virtualmachine:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ azure_vm_name }}"
+    vm_size: "{{ azure_vm_size }}"
+    admin_username: "{{ azure_vm_username }}"
+    ssh_password_enabled: false
+    ssh_public_keys:
+      - path: /home/{{ azure_vm_username }}/.ssh/authorized_keys
+        key_data: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    network_interfaces: "{{ azure_vm_name }}-nic"
+    image:
+      publisher: "{{ azure_image_publisher }}"
+      offer: "{{ azure_image_offer }}"
+      sku: "{{ azure_image_sku }}"
+      version: "{{ azure_image_version }}"
+    state: present 

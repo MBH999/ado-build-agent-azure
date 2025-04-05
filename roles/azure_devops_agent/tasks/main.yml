@@ -1,0 +1,26 @@
+---
+# Azure VM Creation Tasks
+- name: Include Azure VM creation tasks
+  ansible.builtin.include_tasks: azure_vm.yml
+  when: azure_vm_state == 'present'
+
+# Add VM to inventory
+- name: Add VM to inventory
+  ansible.builtin.add_host:
+    name: "{{ azure_vm_name }}"
+    ansible_host: "{{ azure_public_ip_address.state.ip_address }}"
+    ansible_user: "{{ azure_vm_username }}"
+    ansible_connection: ssh
+  when: azure_vm_state == 'present'
+
+- name: Wait for SSH to become available
+  ansible.builtin.wait_for:
+    port: 22
+    host: "{{ azure_public_ip_address.state.ip_address }}"
+    sleep: 5
+  when: azure_vm_state == 'present'
+
+# DevOps Agent Configuration Tasks
+- name: Include DevOps agent configuration tasks
+  ansible.builtin.include_tasks: devops_agent.yml
+  when: azure_vm_state == 'present' 
